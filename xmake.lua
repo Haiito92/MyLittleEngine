@@ -1,10 +1,10 @@
 add_rules("mode.debug", "mode.release")
-add_requires("libsdl")
+add_requires("libsdl", "libsdl_image")
 
 target("MyLittleEngine")
     set_kind("binary")
     add_files("src/*.cpp")
-    add_packages("libsdl")
+    add_packages("libsdl","libsdl_image")
 
 
 --
